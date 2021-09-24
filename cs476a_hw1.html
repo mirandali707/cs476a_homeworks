@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>Homework 1</title>
+    <link type="text/css" rel="stylesheet" href="assets/css/github-markdown.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/pilcrow.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/hljs-github.min.css"/>
+  </head>
+  <body>
+    <article class="markdown-body"><h1 id="homework-1"><a class="header-link" href="#homework-1"></a>Homework 1</h1>
+<p>9.23.21
+Miranda Li</p>
+<h2 id="reading-reflection"><a class="header-link" href="#reading-reflection"></a>Reading reflection</h2>
+<p>On Artful Design page 43, Principle 1.11 states: Design is constraints, which give rise to interactions and, in turn, aesthetics. I found it interesting that &quot;design is constraints&quot; implies that design cannot exist without constraints. I&#39;d even take it a step further and say that an assumption this principle makes is that any given problem has more than one solution, and design is about crafting a solution which accounts for not only the problem but also higher-level concerns like interactions and aesthetics. That is, if there are multiple solutions (which, we can assume, there always are), design is about seeking the most beautiful among them.</p>
+<p>&quot;Design is constraints&quot; is likely initially read as &quot;design is born from external constraints&quot;, but can also be read as &quot;design is about imposing constraints&quot;. This to me initially felt counterintuitive but upon further thought, really isn&#39;t -- if we think of &quot;producing joy&quot; and &quot;being beautiful for beauty&#39;s sake&quot; as constraints, design is certainly about imposing constraints. &quot;Design is constraints&quot;, then, means not only that design is shaped by external, initial constraints (think &quot;art with a purpose&quot; -- fulfilling a function being the most obvious of these constraints), but also that in designing we make decisions about what additional constraints to impose. In designing an airplane, for example, we mandatorily must fulfill the constraint that the airplane can remain in the air without falling. But as designers we may pose additional constraints, like that the inside be as comfortable and welcoming as possible, or that the luggage storage is sufficient and convenient and not obstructive.</p>
+<p>&quot;Artful design&quot; to me represents this balance -- of imposing constraints, which feels like a very engineering-y thing to do, but where the constraints are aesthetic concerns like beauty or comfort.</p>
+<p>Another interesting aspect of this principle is that in the iceberg diagram, the aesthetics are above the water&#39;s surface, the interactions are right at the water&#39;s surface, and the constraints are beneath the water. This implies that the iceberg is from the point of view of the user -- the user experiences the aesthetics, and certainly experiences the interactions, but is abstracted away form the constraints -- the designer, however, must worry about the entire iceberg. The designer&#39;s job is to fill those constraints which are required but also to impose constraints in order to optimize for the user&#39;s experience, which requires a certain degree of estimation -- the designer must put themselves in the user&#39;s shoes and think of what new constraints may be necessary or beneficial to introduce or accommodate.</p>
+<h2 id="design-etude"><a class="header-link" href="#design-etude"></a>Design etude</h2>
+<h3 id="bulb-cage-jewelry-holder"><a class="header-link" href="#bulb-cage-jewelry-holder"></a>Bulb cage jewelry holder</h3>
+<p><img src="img/c69a45fe6d448280dfa787d0c81a8196.png" alt="">
+This is a bulb cage, which I bought at an antiques store in San Francisco called Stuff. I&#39;m using it to store / display my jewelry. I&#39;m obsessed with it. Its initial function was to protect a lightbulb from shattering, and to aid in the hanging of said lightbulb somewhere (presumably) outdoors, so it&#39;s made of solid, sturdy metal, and the bottom ring can be unscrewed to insert a lightbulb and screwed tight to secure. I am, notably, not using it for this purpose. To me, the sturdiness of the metal and the gridlike design afford lots of space to hang things like earrings and necklaces, and I appreciate that since it is so open in shape, my necklaces don&#39;t get tangled; my earrings don&#39;t get jumbled, and everything can be easily and accessibly retrieved and re-organized. I also love the fact that the shape evokes the imagery of a bird cage, which I think is a kind of striking, almost romantic/poetic sort of association -- I bought it because I wanted to either put a plant in it or make some sort of art out of it. I think in a way this counts as me having made some sort of art out of it.</p>
+<h3 id="push-pin"><a class="header-link" href="#push-pin"></a>Push pin</h3>
+<p><img src="img/1307116bfab017804830848b6919d213.png" alt="">
+Moving to campus and all the rushed room decoration that that entails has made me really appreciative of the old reliable push pin. It&#39;s small, extremely inexpensive, and highly versatile -- you can pin things to the wall, of course, but you can also hang things from the plastic part of the pin (such as the model of my left hand I&#39;ve got displayed on my wall in my room, as shown in the image above). I&#39;m always impressed by how strong push pins are, especially when secured properly to the wall -- because they&#39;re not too long and have that sort of lip at the base of the metal part which creates a larger surface area for pushing against the wall, using a few is sufficient to mount even relatively large, cumbersome objects. And when you&#39;re done using them, the only thing they leave behind is a tiny, almost unnoticeable hole (no glue residue, no paint peeling, no paper shreds), and they can be easily stored and reused later.</p>
+<h3 id="aeropress"><a class="header-link" href="#aeropress"></a>Aeropress</h3>
+<p><img src="img/18de7480ee3d21a3869b9acaa716cad0.png" alt="">
+My Aeropress coffee maker is one of my most prized possessions. For the low price of $30, you can make a high quality cup of coffee, with a device which is surprisingly tunable but also highly consistent. In my opinion, most other coffeemaking methods either require more upfront training (it is nearly impossible to mess up making coffee with an Aeropress), more cleaning afterwards, or more money. The Aeropress is inexpensive, sturdy, easily cleaned (just pop the coffee grinds out of the bottom and rinse with water), but is still held in high esteem by coffee snobs. Very, very impressive work by inventor Alan Adler, who was once a lecturer at Stanford, and is a very talented engineer and inventor.</p>
+<h2 id="chuck-exercise"><a class="header-link" href="#chuck-exercise"></a>ChucK exercise</h2>
+<p>Here&#39;s some code which will produce a nice burbling computer noise in ChucK.</p>
+<pre class="hljs"><code><span class="hljs-comment">// unit generator; sine wave generator into sound output</span>
+SinOsc foo =&gt; dac;
+
+<span class="hljs-comment">// computer noises</span>
+<span class="hljs-keyword">while</span>(<span class="hljs-keyword">true</span>){
+    Math.random2f(<span class="hljs-number">30</span>,<span class="hljs-number">1000</span>) =&gt; foo.freq;
+    <span class="hljs-number">100</span>::ms =&gt; now;
+}</code></pre>    </article>
+  </body>
+</html>
