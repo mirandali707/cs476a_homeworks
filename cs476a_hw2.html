@@ -3,13 +3,40 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
-    <title>Homework 2</title>
+    <title>Last Train Home (Homework 2)</title>
     <link type="text/css" rel="stylesheet" href="assets/css/github-markdown.css">
     <link type="text/css" rel="stylesheet" href="assets/css/pilcrow.css">
     <link type="text/css" rel="stylesheet" href="assets/css/hljs-github.min.css"/>
   </head>
   <body>
-    <article class="markdown-body"><h1 id="homework-2"><a class="header-link" href="#homework-2"></a>Homework 2</h1>
+    <article class="markdown-body"><h1 id="last-train-home-homework-2"><a class="header-link" href="#last-train-home-homework-2"></a>Last Train Home (Homework 2)</h1>
+<p>The Last Train Home is an audio visualizer inspired by waiting for the subway on an empty platform, late at night. I wanted to capture the emotions of:</p>
+<ul class="list">
+<li>liminal space</li>
+<li>subtle dystopia</li>
+<li>magical realism</li>
+<li>the eeriness of apocalypse</li>
+<li>waiting, waiting, waiting</li>
+<li>everyday life in The Simulation</li>
+<li>absurdity &amp; mundanity &amp; how frequently they are the same</li>
+</ul>
+<p>For the narrative part of the assignment, I chose to emulate Chopin&#39;s Nocturne in E-flat major, Opus 9, No. 2, in ChucK. The very end is the most important part. Here it is:</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fVty9BYlqIY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p>For reference, I implemented 3 keypress triggers:</p>
+<ul class="list">
+<li>pressing &#39;N&#39; plays the narrative / nocturne.</li>
+<li>pressing &#39;S&#39; plays the subway train approaching noise, which I downloaded as an MP3 from <a href="https://orangefreesounds.com/subway-train-arriving-to-stations/">here</a> and converted to a .wav file.</li>
+<li>pressing &#39;T&#39; summons the train, or, if the train has already been summoned, sends the train on its way. The camera movements which zoom in and out on the train are also triggered by pressing &#39;T&#39;.</li>
+</ul>
+<p>Here are some photos, and a video of the visualizer running with microphone input:</p>
+<p><img src="img/8094393f36a4cc8e834c3ad66825f9a7.png" alt="">
+<img src="img/acb2bcfc67ccd84608e4e5d24e3a9678.png" alt=""></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LdmuSYAzdPU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p><a href="https://drive.google.com/file/d/1m1S5AqQlw0LUwXiwQw0sx0bMYEg8f5sM/view?usp=sharing">Here&#39;s the .zipped Unity project</a> and <a href="https://drive.google.com/file/d/1m1S5AqQlw0LUwXiwQw0sx0bMYEg8f5sM/view?usp=sharing">here&#39;s the final build</a>.</p>
+<p>I had a lot of fun with this project, and given that it&#39;s the first project I&#39;ve done in Unity, I&#39;m quite proud of how it turned out. I encountered many difficulties getting situated with Unity, learning how to import assets, learning about scripting in Unity, learning about lighting, learning about animation in Unity, etc. A nontrivial part of the reason I decided to make the train very small and also only one car long was because I spent an entire day frustrated that my attempt to animate a 6-car, normal-sized train was messing my entire scene up and dropping the frame rate dramatically. Tiny train is gentle, unassuming, and easy to manage. Tiny train is my friend.</p>
+<p>Having overcome the various learning curves I did to create this final product, I feel much more confident in my very novice Unity skillset than I did before. I would like to thank Kunwoo from the very bottom of my heart for all of his kindness and support throughout this process, and I&#39;d like to thank whoever put a very nice-looking <a href="https://assetstore.unity.com/packages/3d/vehicles/land/subway-train-13482">free subway train</a> on the Unity asset store.</p>
 <h2 id="milestone-1"><a class="header-link" href="#milestone-1"></a>Milestone 1</h2>
 <p>I found the roll a ball tutorial to be really really informative and helpful. I think it might take me a second to get used to the ways in which certain Unity GUI interface interactions are required to link the variables to the code, but with my basic knowledge of animation and callbacks from past programming things I felt really really comfortable with all the code we wrote. I&#39;m still a bit clunky navigating the scene in Unity but I know that will improve as I work.</p>
 <p>The Chunity tutorial was also straightforward and helpful, and I liked that adding sound to roll-a-ball enhanced the gameplay a lot, in my opinion. I love the chaotic, spatialized, burbling pickup object. It doesn&#39;t seem too much harder than scripting in Unity to add Chuck into Unity (though I may regret saying this later).</p>
