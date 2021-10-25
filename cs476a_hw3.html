@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>Homework 3: Music Sequencer</title>
+    <link type="text/css" rel="stylesheet" href="assets/css/github-markdown.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/pilcrow.css">
+    <link type="text/css" rel="stylesheet" href="assets/css/hljs-github.min.css"/>
+  </head>
+  <body>
+    <article class="markdown-body"><h1 id="homework-3-music-sequencer"><a class="header-link" href="#homework-3-music-sequencer"></a>Homework 3: Music Sequencer</h1>
+<h2 id="milestone-1"><a class="header-link" href="#milestone-1"></a>Milestone 1</h2>
+<p>I researched music and step sequencers, but most of the results were related to professional music synthesis, where the synthesized music is the object, and the synthesizer itself is designed for functionality. Thinking back to a reading response I did to Artful Design, I was reflecting on how design is not only working within constraints but also imposing new ones for aesthetics or playfulness -- in my case, I want my synthesizer to be fun, playful, and visually interesting, even if that comes at the expense of the ability to create complex audio tracks. I was inspired by the Chickenser tutorial (which was also a very helpful reference for getting started), which is silly and simple.</p>
+<p>Here are my 5 sketches (in no particular order); I&#39;ll explain them in more detail below. Some of these ideas produce things which are capable of more interesting music than others.</p>
+<p class="img-container"><img src="img/sequencer_ideas.jpg" alt=""></p>
+<h3 id="bevins"><a class="header-link" href="#bevins"></a>Bevins</h3>
+<p>This idea is inspired by a character in George Saunders&#39; historical fiction Lincoln in the Bardo. I read this book a while ago and the imagery has really stuck with me; I&#39;ve been wanting to do some sort of project with it for a while. If you&#39;ve never read the book, the important context here is that Bevins is a ghost, and in the book he is described as follows:</p>
+<p>&quot;Bevins&quot; had several sets of eyes   All darting to and fro    Several noses   All sniffing    His hands (he had multiple sets of hands, or else his hands were so quick they seemed to be many) struck this way and that, picking things up, bringing them to his face with a most inquisitive
+Little bit scary
+In telling his story he had grown so many extra eyes and noses and hands that his body all but vanished   Eyes like grapes on a vine Hands feeling the eyes   Noses smelling the hands
+Slashes on every one of the wrists.</p>
+<p>I&#39;ve been really captivated by the visual effect of growing eyes and noses, constantly moving, and I can&#39;t find any good representations of how it looks in my mind.</p>
+<p>I&#39;m not sure I want to use this idea for my sequencer because, to be frank, I&#39;m really attached to making something <em>good</em> out of this idea, and I&#39;m not convinced my sequencer will be good enough for my own standards, but if I did, I&#39;d make each eye / nose / mouth a different sound and allow size adjustment for pitch adjustment. I&#39;m thinking the mouth would be some sort of bass, the nose some sort of chord, and the eyes various different noises that function as the &quot;melody&quot;. I think I would somehow convey that the noises are played left to right, so that the nose and mouth noises can be played concurrently with the eyes.</p>
+<p>Visually, I think it would be cool to import a bunch of eyes / noses cut out from images to create a 2D collage-like aesthetic, sort of like the Dadaism face collages:
+<img src="img/hoch.jpeg" alt=""></p>
+<h3 id="shadow-puppets"><a class="header-link" href="#shadow-puppets"></a>Shadow puppets</h3>
+<p>This next idea is pretty straightforward; the camera would capture some sort of big &quot;wall&quot; onto which the shadows of objects are projected like shadow puppets. The spotlight which casts the shadows would pulse from the inside out, and when the frontier of the spotlight intersects an object that object will make its noise. The user can place objects in front of the light source.</p>
+<p>Unsure how easy it will be to get Unity to compute realtime shadows, but I think the effect will be cool -- <a href="https://www.reddit.com/r/Vive/comments/4izhvy/accidentally_created_a_shadow_puppet_simulator_in/">someone on Reddit</a> has done it before, how hard can it be?</p>
+<h3 id="still-life"><a class="header-link" href="#still-life"></a>Still life</h3>
+<p>This sequencer takes the point of view of someone painting a still life setup. A paintbrush moving left to right across the view (canvas in the foreground to convey context) will convey timing, and objects placed in the scene will make different sounds. Objects can be rescaled for pitch.</p>
+<p>I&#39;d love it if this also took on a 2D aesthetic, but ideally with some moody, dim lighting.</p>
+<h3 id="walking"><a class="header-link" href="#walking"></a>Walking</h3>
+<p>This sequencer takes &quot;step sequencer&quot; quite literally -- this one focuses on a sidewalk on which multiple people / animals are walking. Sounds are emitted when their feet hit the ground; different people / animals make different base noises. Changing the tempo at which they walk changes the tempo of the sound.</p>
+<h3 id="hamster-wheels"><a class="header-link" href="#hamster-wheels"></a>Hamster wheels</h3>
+<p>For this design the user can add hamster wheels and animals (optionally hamsters) inside the wheels. Different animals make different sounds. The size of the wheel corresponds to the tempo (maybe one point on the wheel will be colored, and whenever the animal steps over that point a noise will be emitted); the size of the animal corresponds to the pitch, and the type of animal corresponds to the type of noise.</p>
+    </article>
+  </body>
+</html>
