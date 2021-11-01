@@ -34,6 +34,19 @@ Slashes on every one of the wrists.</p>
 <p>This sequencer takes &quot;step sequencer&quot; quite literally -- this one focuses on a sidewalk on which multiple people / animals are walking. Sounds are emitted when their feet hit the ground; different people / animals make different base noises. Changing the tempo at which they walk changes the tempo of the sound.</p>
 <h3 id="hamster-wheels"><a class="header-link" href="#hamster-wheels"></a>Hamster wheels</h3>
 <p>For this design the user can add hamster wheels and animals (optionally hamsters) inside the wheels. Different animals make different sounds. The size of the wheel corresponds to the tempo (maybe one point on the wheel will be colored, and whenever the animal steps over that point a noise will be emitted); the size of the animal corresponds to the pitch, and the type of animal corresponds to the type of noise.</p>
+<h2 id="milestone-2"><a class="header-link" href="#milestone-2"></a>Milestone 2</h2>
+<p>Here&#39;s the first version.</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/0utuwLYA0o4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p>Pretty simple so far; here is what is implemented:</p>
+<ul class="list">
+<li>pressing E adds a random eye (there are currently 10 to choose from)</li>
+<li>pressing N adds a random nose (there are currently 5 to choose from)</li>
+<li>pressing M adds a random mouth (there are currently 3 to choose from)</li>
+<li>currently every feature has a different sample associated with it with no particular reason as to what is associated with what, but in the final version I&#39;m thinking the same type of feature (e.g. eyes) will all be the same sound or related sounds.</li>
+<li>there is a constraint that there are only 6 features present on the face at a time; adding a feature when there are already 6 will delete the least recently added feature from the face.</li>
+<li>all elements can hypothetically be dragged by the mouse but as you can see in the video this doesn&#39;t always work out so smoothly when things are overlapping. Maybe I&#39;ll fix this but more likely I won&#39;t and instead just try to prevent them from overlapping somehow, or not. :)</li>
+</ul>
     </article>
   </body>
 </html>
