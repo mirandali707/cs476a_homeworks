@@ -3,13 +3,55 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
-    <title>Homework 3: Music Sequencer</title>
+    <title>Roger Bevins III: Music Sequencer</title>
     <link type="text/css" rel="stylesheet" href="assets/css/github-markdown.css">
     <link type="text/css" rel="stylesheet" href="assets/css/pilcrow.css">
     <link type="text/css" rel="stylesheet" href="assets/css/hljs-github.min.css"/>
   </head>
   <body>
-    <article class="markdown-body"><h1 id="homework-3-music-sequencer"><a class="header-link" href="#homework-3-music-sequencer"></a>Homework 3: Music Sequencer</h1>
+    <article class="markdown-body"><h1 id="roger-bevins-iii-music-sequencer"><a class="header-link" href="#roger-bevins-iii-music-sequencer"></a>Roger Bevins III: Music Sequencer</h1>
+<p>In George Saunders&#39; Lincoln in the Bardo, we follow the ghost of Abraham Lincoln&#39;s son Willie through a graveyard, where we encounter other ghosts who haunt it. One of these ghosts is Roger Bevins III. The book describes him as follows:</p>
+<p>&quot;&quot;&quot;Bevins&quot; had several sets of eyes   All darting to and fro    Several noses   All sniffing    His hands (he had multiple sets of hands, or else his hands were so quick they seemed to be many) struck this way and that, picking things up, bringing them to his face with a most inquisitive
+Little bit scary
+In telling his story he had grown so many extra eyes and noses and hands that his body all but vanished   Eyes like grapes on a vine Hands feeling the eyes   Noses smelling the hands&quot;</p>
+<p>This music sequencer was inspired by the image of Bevins -- too many eyes, fading in and out of view, facial features jumbled and overwhelming. I wanted to capture the emotions of:</p>
+<ul class="list">
+<li>spooky</li>
+<li>uncanny valley</li>
+<li>historical fiction</li>
+<li>how jarring it is to be reminded that we are all flesh and bone</li>
+<li>faces (and our obsessions with them) are so strange</li>
+</ul>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_4ozIi4t0Ig" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<p>Here is the functionality I implemented:</p>
+<ul class="list">
+<li>All facial features on a frame play concurrently; frames play sequentially</li>
+<li>There are a maximum of 5 frames (denoted by the hands at the bottom of the screen)</li>
+<li>You start with only one frame (so only that frame will play over and over)</li>
+<li>Pressing &quot;A&quot; adds a frame</li>
+<li>Pressing a number which corresponds to an available frame number (i.e. if you have 3 frames you can&#39;t press &quot;4&quot; but if you have 5 frames you can) will lock that frame for editing</li>
+<li>Locked frames will not fade in and out of view (though the hands at the bottom of the screen still indicate which frame is currently playing); editing can only be done on locked frames</li>
+<li>Adding frames will lock them by default so you can edit them as soon as you add them; game starts with first frame locked</li>
+<li>Pressing &quot;U&quot; unlocks all frames so the features will fade in and out but you can no longer edit individual frames</li>
+<li>On a locked frame:<ul class="list">
+<li>Pressing &quot;E&quot; adds an eye, which is a C played on an organ</li>
+<li>Pressing &quot;N&quot; adds a nose, which is a wind noise (they are all different and you are given a random nose)</li>
+<li>Pressing &quot;M&quot; adds a mouth, which is a heartbeat (they are all different and you are given a random mouth)</li>
+<li>Selected elements will twitch</li>
+<li>Pressing the up arrow increases the rate of that sample so that the pitch goes up one half note</li>
+<li>Pressing the down arrow decreases the rate of that sample so that the pitch goes down one half note</li>
+<li>Click and drag features to move them around</li>
+</ul>
+</li>
+</ul>
+<p>This project was really fun. I enjoyed the technical challenges associated with creating such an absurd, borderline horrifying output. I&#39;m big into pseudocoding and thinking visually, so I drew a lot of notes on my iPad as I progressed, which I  will include here so you can see what it feels like to be inside my head when I am doing these sorts of things:
+<img src="img/bevins1.jpg" alt="">
+<img src="img/bevins2.jpg" alt="">
+<img src="img/bevins3.jpg" alt="">
+<img src="img/bevins4.jpg" alt=""></p>
+<p>Huge huge huge thank you to Wikimedia Commons and Freesound.org.</p>
+<p><a href="https://drive.google.com/drive/folders/1lnI1JOjnFusC4ePUA6fgEr-EA_0sF6Xg?usp=sharing">Here&#39;s the build on Google Drive</a> and <a href="https://drive.google.com/file/d/1A7XAsR05KGFRGEe48F1gNN4XodLaUq3V/view?usp=sharing">here&#39;s the .zipped project</a>.</p>
 <h2 id="milestone-1"><a class="header-link" href="#milestone-1"></a>Milestone 1</h2>
 <p>I researched music and step sequencers, but most of the results were related to professional music synthesis, where the synthesized music is the object, and the synthesizer itself is designed for functionality. Thinking back to a reading response I did to Artful Design, I was reflecting on how design is not only working within constraints but also imposing new ones for aesthetics or playfulness -- in my case, I want my synthesizer to be fun, playful, and visually interesting, even if that comes at the expense of the ability to create complex audio tracks. I was inspired by the Chickenser tutorial (which was also a very helpful reference for getting started), which is silly and simple.</p>
 <p>Here are my 5 sketches (in no particular order); I&#39;ll explain them in more detail below. Some of these ideas produce things which are capable of more interesting music than others.</p>
